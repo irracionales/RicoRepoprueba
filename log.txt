@@ -1,0 +1,276 @@
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo
+$ mkd dir Reponline
+bash: mkd: command not found
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo
+$ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo
+$ mkdir reponline
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo
+$ cd reponline/
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline
+$ ls
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline
+$ git init
+Initialized empty Git repository in C:/Users/Casa/Desktop/RicoRepo/reponline/.git/
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ ls
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git config --global user.name irracionales
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git config --global user.email pachorradicas@gmail.com
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ echo "hola" >> .gitignore
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git -d .git
+.git/       .gitignore
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git -d .git
+.git/       .gitignore
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git -d .git
+.git/       .gitignore
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git -d .gitignore
+unknown option: -d
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ rm gitignore
+rm: cannot remove 'gitignore': No such file or directory
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ rm .gitignore
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ echo >> .gitignore
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ start notepad++ .gitignore
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ echo "hola" >> pruebazip.zip
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git commit -m "prueba de omisión de zips"
+[master (root-commit) 7918c05] prueba de omisión de zips
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git remote add https://github.com/irracionales/RicoRepoprueba
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git remote add origin https://github.com/irracionales/RicoRepoprueba
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 236 bytes | 47.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/irracionales/RicoRepoprueba
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git log --stats
+fatal: unrecognized argument: --stats
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git log --stat
+commit 7918c055c067cbdb635e195957507288d547adf1 (HEAD -> master, origin/master)
+Author: irracionales <pachorradicas@gmail.com>
+Date:   Wed May 19 08:15:52 2021 +0200
+
+    prueba de omisión de zips
+
+ .gitignore | 2 ++
+ 1 file changed, 2 insertions(+)
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ echo "*Esto es un repositorio de ejemplo.*" >> Readme.md
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git add .
+warning: LF will be replaced by CRLF in Readme.md.
+The file will have its original line endings in your working directory
+git
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git commit -m "creado readme.md"
+[master 0d561d8] creado readme.md
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Readme.md
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 319 bytes | 31.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/irracionales/RicoRepoprueba
+   7918c05..0d561d8  master -> master
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 687 bytes | 9.00 KiB/s, done.
+From https://github.com/irracionales/RicoRepoprueba
+   0d561d8..b5a75be  master     -> origin/master
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git status
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git dish
+git: 'dish' is not a git command. See 'git --help'.
+
+The most similar commands are
+        diff
+        push
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git log stat
+fatal: ambiguous argument 'stat': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git log --stat
+commit 0d561d875957ae1d8692eb25dc74e97e91d86eb8 (HEAD -> master)
+Author: irracionales <pachorradicas@gmail.com>
+Date:   Wed May 19 08:24:22 2021 +0200
+
+    creado readme.md
+
+ Readme.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 7918c055c067cbdb635e195957507288d547adf1
+Author: irracionales <pachorradicas@gmail.com>
+Date:   Wed May 19 08:15:52 2021 +0200
+
+    prueba de omisión de zips
+
+ .gitignore | 2 ++
+ 1 file changed, 2 insertions(+)
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 655 bytes | 18.00 KiB/s, done.
+From https://github.com/irracionales/RicoRepoprueba
+   b5a75be..33fb212  master     -> origin/master
+Updating 0d561d8..33fb212
+Fast-forward
+ .gitignore | 2 +-
+ Readme.md  | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ start notepad++ Readme.md
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ cat Readme.md
+*Esto es un repositorio de ejemplo.*
+hola
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ cat .git
+.git/       .gitignore
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ cat .git
+.git/       .gitignore
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$ cat .gitignore
+*.zip
+*.rar
+
+Casa@DESKTOP-UOABLCN MINGW64 ~/Desktop/RicoRepo/reponline (master)
+$
